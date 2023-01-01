@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Tahoma, Arial;
+}
+.quiz-container {
+  background-color: #f8f8f8;
+  margin: 20px auto;
+  padding: 20px;
+  width: 800px;
+}
+.quiz-container .info {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  font-size: 15px;
+}
+.quiz-container .category {
+  flex: 1;
+}
+.quiz-area {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 15px;
+}
+.quiz-area h2 {
+  margin: 0;
+}
+.answers-area {
+  background-color: #fff;
+  padding: 0 20px 20px;
+}
+.answers-area input[type="Radio"] {
+  accent-color: rgb(17 151 138);
+}
+.answers-area div {
+  padding: 15px;
+  background-color: #f9f9f9;
+  color: #777;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.answers-area div:hover{
+    background-color: #eee;
+    color: rgb(17 151 138);
+    cursor: pointer;
+}
+.answers-area div:not(:last-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+.answers-area input[type="Radio"] + label {
+  cursor: pointer;
+}
+.answers-area input[type="Radio"]:checked + label {
+  color: rgb(17 151 138);
+}
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 20px auto;
+  background-color: rgb(17 151 138);
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.submit-button:hover {
+  background-color: rgb(15 121 111);
+}
+.submit-button:focus {
+  outline: none;
+}
+.countdown {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+}
+.countdown .spans {
+  display: flex;
+  flex: 1;
+}
+.countdown .spans span {
+  width: 15px;
+  height: 15px;
+  background-color: #ddd;
+  margin-right: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.countdown .spans span.on {
+  background-color: rgb(17 151 138);
+}
+.results{
+    padding: 15px 0 0 2px;
+    font-size: 15px;
+}
+.results span{
+font-weight: bold;
+}
+.results span.bad{
+    color: #dc0a0a;
+}
+.results span.good{
+    color: #0075ff;
+}
+.results span.perfect{
+    color: #009688;
+}
